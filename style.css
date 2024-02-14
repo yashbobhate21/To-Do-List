@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: purple;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:rgb(47, 44, 44)
+}
+.container{
+    width: 550px;
+    min-height: 330px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+
+}
+#newtask{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 57px;
+}
+#newtask input{
+    width:70%;
+    height:45px;
+    font-size: 15px;
+    border: 2px solid rgb(98, 6, 124);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+#newtask button{
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(140, 0, 255, 0.751);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#tasks{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    position: relative;
+    }
+    #tasks .todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    font-family: sans-serif;
+
+    }
+.delete{
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(140, 0, 255, 0.751);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid purple;
+    padding: 10px 10px;
+    overflow: auto;
+    text-wrap: wrap;
+}
+#taskname{
+    font-weight: bold;
+    font-size: large;
+    font-family: sans-serif;
+    cursor: pointer;
+    
+}
+.completed{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:500px){
+    #newtask{
+        max-width: 300px;
+        position: relative;
+        left: 160px;
+    }
+    #tasks{
+        max-width: 300px;
+        position: relative;
+        left: 160px;
+    
+        
+    }
+    body{
+        background-repeat: repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        position: relative;
+        left: 60px;
+    }
+}
